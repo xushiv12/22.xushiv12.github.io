@@ -1,0 +1,26 @@
+
+<link rel="icon" href="https://domain.xu-guang-you-xushi.com/xushi.png">
+<title>HTML6编辑器</title>
+<button onclick="A()">点击运行</button><br>
+<textarea id="a"></textarea>
+<iframe id="b"></iframe>
+<style>
+#a{
+	width:50%;
+	height:90vh;
+	position:fixed;
+	top:40;left:0;
+	}
+#b{
+	width:50%;
+	height:90vh;
+	position:fixed;
+	top:0;left:700;
+	}
+</style>
+<script>
+function A(){
+	let a=document.getElementById("a").value;
+	document.getElementById("b").srcdoc=a+"<script src='https://domain.xu-guang-you-xushi.com/HTML6.js'><\/script>";
+}
+</script>
